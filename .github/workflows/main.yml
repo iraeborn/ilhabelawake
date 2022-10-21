@@ -15,12 +15,11 @@ jobs:
       uses: actions/checkout@v2
     
     - name: Sync files
-      uses: easingthemes/ssh-deploy@main
+      uses: easingthemes/ssh-deploy@v2.1.5
       env:
         ARGS: >-  
             -rltgoDzvO
             --exclude='.git'
-            --exclude='node_modules/'
         TARGET: ${{ secrets.REMOTE_TARGET }}
         SSH_PRIVATE_KEY: ${{ secrets.RSA_PRIVATE_KEY }}
         REMOTE_HOST: ${{ secrets.SERVER_HOST }}
