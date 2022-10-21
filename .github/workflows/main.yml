@@ -1,4 +1,4 @@
-name: Ilhabela Wake CI
+name: Deploy Prod Ilhabela Wake
 
 on:
   push:
@@ -6,18 +6,23 @@ on:
       - main
 
 jobs:
-  web-deploy:
+  deploy:
     name: Deploy
     runs-on: ubuntu-latest
+
     steps:
     - name: Get latest code
       uses: actions/checkout@v2
     
     - name: Sync files
       uses: easingthemes/ssh-deploy@main
-      with:
+      env:
+        ARGS: >-  
+            -rltgoDzvO
+            --exclude='.git'
+            --exclude='node_modules/'
+        TARGET: ${{ secrets.REMOTE_TARGET }}
         SSH_PRIVATE_KEY: ${{ secrets.RSA_PRIVATE_KEY }}
-        SOURCE: public_html/
         REMOTE_HOST: ${{ secrets.SERVER_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        REMOTE_TARGET: ${{ secrets.REMOTE_TARGET }}
+        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
