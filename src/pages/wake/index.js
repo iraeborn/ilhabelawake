@@ -44,7 +44,7 @@ import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/bg-wake-born-sun-ilhabela.jpg";
 
 function Wake() {
   return (
@@ -65,7 +65,7 @@ function Wake() {
         sx={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
         }}
