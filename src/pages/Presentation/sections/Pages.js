@@ -1,25 +1,12 @@
-import { Link } from "react-router-dom";
-
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
-
-import ExampleCard from "pages/Presentation/components/ExampleCard";
-
-import data from "pages/Presentation/sections/data/pagesData";
+import ContactUs from "layouts/pages/landing-pages/contact-us";
 
 function Pages() {
-  const renderData = data.map(({ image, name, route }) => (
-    <Grid item xs={12} md={6} sx={{ mb: { xs: 3, lg: 0 } }} key={name}>
-      <Link to={route}>
-        <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
-      </Link>
-    </Grid>
-  ));
-
   return (
     <MKBox component="section" py={6}>
       <Container>
@@ -51,7 +38,7 @@ function Pages() {
         <Grid container spacing={3}>
           <Grid item xs={12} lg={9} sx={{ mt: 3, px: { xs: 0, lg: 8 } }}>
             <Grid container spacing={3}>
-              {renderData}
+              <ContactUs />
             </Grid>
           </Grid>
           <Grid item xs={12} lg={3}>
