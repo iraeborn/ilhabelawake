@@ -1,34 +1,14 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// react-router-dom components
 import { Link } from "react-router-dom";
 
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
-// Presentation page components
 import ExampleCard from "pages/Presentation/components/ExampleCard";
 
-// Data
 import data from "pages/Presentation/sections/data/pagesData";
 
 function Pages() {
@@ -55,16 +35,15 @@ function Pages() {
           <MKBadge
             variant="contained"
             color="info"
-            badgeContent="boost creativity"
+            // badgeContent="boost creativity"
             container
             sx={{ mb: 2 }}
           />
           <MKTypography variant="h2" fontWeight="bold">
-            With our coded pages
+            Qualquer pessoa pode aprender wakeboard
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            The easiest way to get started is to use one of our
-            <br /> pre-built example pages.
+            Se divertir aqui é o objetivo!
           </MKTypography>
         </Grid>
       </Container>
@@ -78,11 +57,11 @@ function Pages() {
           <Grid item xs={12} lg={3}>
             <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
               <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                Presentation Pages for Company, Landing Pages, Blogs and Support
+                Uma oportunidade de praticar esse esporte com mais facilidade e em meio a natureza.
               </MKTypography>
               <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                These is just a small selection of the multiple possibitilies you have. Focus on the
-                business, not on the design.
+                Ilhabela é a Capital da Vela, mas quando o vento não sopra o Wakeboard é a saída
+                perfeita para não ficar sentado olhando o mar calmo.
               </MKTypography>
             </MKBox>
           </Grid>

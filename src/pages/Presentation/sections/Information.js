@@ -42,12 +42,12 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Agora tem
                     <br />
-                    Material Kit
+                    Wakeboard em Ilhabela
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="O IlhabelaWake surgiu em 2022 com o objetivo de divulgar de forma divertida, segura e eficaz a prática do Wakeboard em Ilhabela."
               />
               <RotatingCardBack
                 image={bgBack}
@@ -65,33 +65,9 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
-                />
-              </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  // icon="content_copy"
+                  // title="Wakeboard em Ilhabela"
+                  description="Uma oportunidade de praticar esse esporte com mais facilidade e em meio a natureza. Ilhabela é a Capital da Vela, porém quando o vento não sopra o Wakeboard é a saída perfeita para não ficar sentado olhando o mar calmo."
                 />
               </Grid>
             </Grid>
